@@ -11,5 +11,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
- script: 
-   - sudo docker build -f Dockerfile -t samp_ac_v2:latest .
+    steps:
+    - uses: actions/checkout@v2
+    - name: configure
+      run: ./configure
+    - name: make check
+      run sudo docker build -f Dockerfile -t samp_ac_v2:latest .
