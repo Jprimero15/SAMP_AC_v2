@@ -13,7 +13,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: configure
-      run: ./configure
-    - name: make check
+    - name: build fuckin sampac.so 
       run: sudo docker build -f Dockerfile -t samp_ac_v2:latest .
