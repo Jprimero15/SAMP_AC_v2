@@ -183,7 +183,7 @@ void CHookManager::Load()
 	{
 		if (!hooks_install_once)
 		{
-			samp = FindPattern("\x8B\x86\xCD\x03\x00\x00\x8B\x40\x18\x85\xC0", "xxxxxxxxxxx", getSampBaseAddress(), getSampSize());
+			samp = FindPattern("\x55\x31\xD2\x89\xE5\x57\xB9\x40\x00\x00\x00", "xxxxxxxxxxx", getSampBaseAddress(), getSampSize());
 
 			if (samp != 0)
 			{
