@@ -16,4 +16,4 @@ jobs:
     - name: configure
       run: ./configure
     - name: make check
-      run sudo docker build -f Dockerfile -t samp_ac_v2:latest .
+      run: sudo docker build -f Dockerfile -t samp_ac_v2:latest .
