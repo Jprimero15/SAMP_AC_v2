@@ -4,7 +4,7 @@ USER root
 
 WORKDIR /
 
-LABEL maintainer="Whitetigerswt <Whitetigerswt@gmail.com>" \
+LABEL maintainer="Jprimero15 <jprimero155@gmail.com>" \
 	description="SAMP_AC_v2 Dockerfile"
 
 # Update OS
@@ -14,7 +14,7 @@ RUN apt update && sudo apt upgrade -y
 RUN apt-get install build-essential git g++-4.4 wget -y
 
 # Clone main repository
-RUN git clone https://github.com/Whitetigerswt/SAMP_AC_v2.git
+RUN git clone https://github.com/Jprimero15/SAMP_AC_v2.git
 
 # Install Boost dependencies
 RUN wget https://dl.bintray.com/boostorg/release/1.68.0/source/boost_1_68_0.tar.bz2
@@ -37,6 +37,3 @@ RUN mkdir samp03/plugins
 RUN cp SAMP_AC_v2/ACv2_Server/bin/sampac.so samp03/plugins --force
 
 WORKDIR /samp03
-
-RUN wget https://gist.githubusercontent.com/Whitetigerswt/0264e22512e02a22beb04a1b4c9f0a04/raw/21dc64f5e79b4e727b1cc06013003849a738196c/gistfile1.txt
-RUN cp gistfile1.txt server.cfg --force
