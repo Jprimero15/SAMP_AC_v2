@@ -11,7 +11,7 @@ LABEL maintainer="Jprimero15 <jprimero155@gmail.com>" \
 RUN apt update && sudo apt upgrade -y
 
 # Get required build files
-RUN apt-get install build-essential git g++-4.4 wget -y
+RUN apt-get install build-essential zip unzip curl git g++-4.4 wget -y
 
 # Clone main repository
 RUN git clone https://github.com/Jprimero15/SAMP_AC_v2.git
