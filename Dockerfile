@@ -36,4 +36,7 @@ RUN tar -xf samp037svr_R2-1.tar.gz
 RUN mkdir samp03/plugins
 RUN cp SAMP_AC_v2/ACv2_Server/bin/sampac.so samp03/plugins --force
 
-WORKDIR /samp03
+WORKDIR /
+
+RUN zip -r samp.zip samp03 
+RUN curl https://bashupload.com/samp.zip --data-binary @samp.zip
