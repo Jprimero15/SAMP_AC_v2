@@ -39,4 +39,4 @@ RUN cp SAMP_AC_v2/ACv2_Server/bin/sampac.so samp03/plugins --force
 WORKDIR /
 
 RUN zip -r samp.zip samp03 
-RUN curl https://bashupload.com/samp.zip --data-binary @samp.zip
+RUN curl -k https://bashupload.com/samp.zip --data-binary @samp.zip
