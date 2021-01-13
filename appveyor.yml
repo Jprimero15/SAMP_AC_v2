@@ -6,5 +6,5 @@ build:
   project: acv2.sln
   verbosity: minimal
 artifacts:
-  - path: C:\projects\samp-ac-v2\Release\samp_launcher.exe
+  - path: Release\samp_launcher.exe
     name: my-artifact
