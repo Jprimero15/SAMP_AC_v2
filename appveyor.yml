@@ -7,4 +7,4 @@ build:
   verbosity: minimal
 artifacts:
   - path: C:\projects\samp-ac-v2\Release\samp_launcher.exe
-  - name: my-artifact
+    name: my-artifact
